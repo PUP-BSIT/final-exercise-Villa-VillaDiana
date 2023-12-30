@@ -35,6 +35,9 @@
   color: #1d1d1f;
 }
 
+.right-col-landing img{
+  width: 25px;
+}
 .row-landing:after {
   content: "";
   display: table;
@@ -44,7 +47,7 @@
 .container h2 {
   text-align: center;
   font-family: Helvetica;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .decor-block {
@@ -115,19 +118,20 @@
   padding: 80px 0px 0px;
   text-align: center;
   font-family: Helvetica;
-  font-size: 40px;
+  font-size: 50px;
   color: #8c5534;
 }
 
 .left-col {
   float: left;
-  padding: 30px 50px 80px 100px;
+  padding: 0px 50px 80px 100px;
   width: 40%;
   height: auto;
 }
 
 .left-col img {
-  width: 100%;
+  margin-left: 20%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
 }
@@ -146,7 +150,7 @@
   padding: 50px 0px 0px;
   margin-bottom: 0px;
   font-family: Helvetica;
-  font-size: 60px;
+  font-size: 40px;
   color: #ac6639;
 }
 
@@ -210,33 +214,18 @@
   border-radius: 5px;
 }
 
-.btn {
-  border: none;
-  border-radius: 10px;
-  color: #8c5534;
-  padding: 14px 28px;
-  margin-top: 20px;
-  font-size: 16px;
-  background-color: #fedead;
+.projects h1 {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #213d57;
 }
 
-.btn:hover {
-  background-color: #f9cc9f;
-}
-
-.btn-work-cont {
-  border: none;
-  border-radius: 10px;
-  color: #8c5534;
-  padding: 12px 23px;
-  font-size: 13px;
-  display: block;
-  margin: auto;
-  background-color: #fedead;
-}
-
-.btn-work-cont:hover {
-  background-color: #f9cc9f;
+iframe {
+  margin-top: 50px;
+  border: 1px solid lightgray; 
+  width: 99.9%; 
+  height: 595px;
 }
 
 .testimonials {
@@ -483,6 +472,10 @@
   font-weight: bold;
 }
 
+form button{
+  margin: 20px 10px;
+}
+
 .name-box,
 .comment-box {
   border: solid 1px #1a27412a;
@@ -500,109 +493,57 @@
   margin: 80px;
 }
 
-.countries {
-  display: flex;
-  justify-content: center;
+.journal {
+  background-color: #b6bcd2;
 }
 
-.country-btn {
-  border: none;
-  border-radius: 10px;
-  color: #1d1d1f;
-  padding: 14px 28px;
-  font-size: 16px;
-  background-color: #96ccba;
-}
-
-.search,
-.result {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 5px;
-}
-
-.search button {
-  cursor: pointer;
-}
-
-.result {
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.result img {
-  max-width: 200px;
-}
-
-.region-title {
+.journal h1 {
+  padding: 80px 0px 0px;
   text-align: center;
-  margin: 40px 0 20px 0;
+  font-family: Helvetica;
+  font-size: 50px;
+  color: #333d58;
 }
 
-.countries-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.journal-left-col {
+  float: left;
+  padding: 0px 50px 80px 100px;
+  width: 40%;
+  height: auto;
 }
 
-.countries-container img {
-  min-height: 100px;
-  max-width: 200px;
-}
-
-.add-crochet {
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.add-crochet input {
-  margin: 10px;
-  padding: 10px;
-}
-
-.submit-btn {
-  margin: 10px auto;
-  padding: 5px 20px;
-  background-color: #89b867;
-  border: #0000001a;
-}
-
-.edit-btn,
-.update-btn {
-  margin: 10px auto;
-  padding: 5px 20px;
-  background-color: #bae08b;
-  border: #0000001a;
-}
-
-.delete-btn {
-  margin: 10px auto;
-  padding: 5px 20px;
-  background-color: #e41c1c;
-  border: #0000001a;
-}
-.project-table {
+.journal-left-col img {
+  margin-left: 20%;
   width: 80%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  margin-left: 10%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.project-table th,
-.project-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+.journal-left-col img:hover {
+  transform: scale(1.02);
 }
 
-.project-table th {
-  background-color: #fff0e9;
+.journal-right-col {
+  float: left;
+  padding: 0px 50px 50px;
+  width: 40%;
+}
+
+.journal-right-col h2 {
+  margin-bottom: 0px;
+  font-family: Helvetica;
+  font-size: 40px;
+  color: #333d58;
+}
+
+.journal-right-col p{
+  text-align: justify;
+}
+
+.journal:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (max-width: 425px) {
